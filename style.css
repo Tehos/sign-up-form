@@ -1,3 +1,65 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --section-bg-color: rgb(239, 239, 239);
+}
+
+/* IMAGE SIDE */
+
+.container{
+    display: flex;
+}
+
+.image-side{
+    min-width: 35vw;
+    height: 100vh;
+    background-image: url(markus-winkler-side-image.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*FORM SIDE*/
+
+.form-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--section-bg-color);
+    gap: 10vh;
+}
+
+.form-side > span{
+    padding: 0 10vw;
+}
+
+.description-section{
+
+}
+
+.form-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-inputs-section{
+    width: 100%;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+
+
+.create-section{
 }
