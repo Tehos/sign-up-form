@@ -2,12 +2,15 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     font-size: 10px;
+    color: var(--font-main-color);
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 :root{
     --section-bg-color: rgb(239, 239, 239);
+    --font-main-color: #282828;
 }
 
 /* IMAGE SIDE */
@@ -31,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--section-bg-color);
-    gap: 10vh;
+    gap: 5vh;
 }
 
 .form-side > span{
@@ -66,12 +69,13 @@ form{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin: 20px 0;
 }
 
 input{
     width: clamp(200px, 25vw, 300px);
     height: 40px;
-    color: #000000;
+    color: var(--font-main-color);
     border: 1px solid #222222;
     border-radius: 1px 1px 2px 2px;
     margin: 0 auto 10px auto;
@@ -114,5 +118,35 @@ input:not(:placeholder-shown) {
 }
 
 button, button + p, p > a{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+
+button{
+font-family: 'Poppins', sans-serif;;
+background-color: var(--font-main-color);
+color:var(--section-bg-color);
+padding: 1.3rem 4rem;
+font-size: 1.8rem;
+letter-spacing: 1px;
+border: 3px solid var(--font-main-color);
+transition: 1s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--section-bg-color);
+    color: var(--font-main-color);
+    transition: 1s ease-in-out;
+    cursor:pointer;
+}
+
+p{
+    margin: 25px 0;
+}
+
+a{
+   font-weight: 700; 
+}
+
+a:visited{
+    color: var()
 }
